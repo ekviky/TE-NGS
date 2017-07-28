@@ -5,6 +5,12 @@
 ## Implementation/getting started
 
 ## Read more
-paper describing method [pdf](#)
-detailed procedures [protocol](#).
-get the source [code](https://github.com/ekviky/TE-NGS)
+- paper describing method [pdf](#)
+
+- detailed procedures [protocol](#)
+
+- get the source [code](https://github.com/ekviky/TE-NGS)
+
+- email
+
+- other [projects](https://ekviky.github.io/about/)
