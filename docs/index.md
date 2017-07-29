@@ -2,6 +2,12 @@
 
 ## About
 
+Tools written in R employing the following packages:  
+- Rsamtools for bam manipulation  
+- GenomicRanges for manipulation of genomic coordinates  
+- Biostrings for fast implementation of regular expression pattern matching  
+- data.table for binary search   
+
 ## Implementation/getting started
 
 ## Read more
