@@ -1,0 +1,23 @@
+BatchJobsParam-class    Enable parallelization on batch systems
+BiocParallel-package    Bioconductor facilities for parallel evaluation
+BiocParallelParam-class
+                        Virtual classes (for developer reference)
+DoparParam-class        Enable parallel evaluation using registered
+                        dopar backend
+MulticoreParam-class    Enable multi-core parallel evaluation
+SerialParam-class       Enable serial evaluation
+SnowParam-class         Enable simple network of workstations
+                        (SNOW)-style parallel evaluation
+bpaggregate             Apply a function on subsets of data frames
+bpcontrols              Control (start, stop, query) back-end Params
+bpiterate               Parallel iteration over an indeterminate number
+                        of data chunks
+bplapply                Parallel lapply-like functionality
+bpmapply                Parallel mapply-like functionality
+bpresume                Resume computation with partial results
+bpschedule              Schedule back-end Params
+bpvec                   Parallel, vectorized evaluation
+bpvectorize             Transform vectorized functions into
+                        parallelized, vectorized function
+register                Maintain a global registry of available
+                        back-end Params

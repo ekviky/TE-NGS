@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Fast and Versatile Argument Checks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+<h1> Fast and Versatile Argument Checks
+<img class="toplogo" src="../../../doc/html/logo.jpg" alt="[R logo]">
+</h1>
+<hr>
+<div align="center">
+<a href="../../../doc/html/packages.html"><img src="../../../doc/html/left.jpg" alt="[Up]" width="30" height="30" border="0"></a>
+<a href="../../../doc/html/index.html"><img src="../../../doc/html/up.jpg" alt="[Top]" width="30" height="30" border="0"></a>
+</div><h2>Documentation for package &lsquo;checkmate&rsquo; version 1.5.2</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../NEWS">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p align="center">
+<a href="# "> </a>
+<a href="#A">A</a>
+<a href="#C">C</a>
+<a href="#Q">Q</a>
+<a href="#T">T</a>
+</p>
+
+<table width="100%">
+<tr><td width="25%"><a href="checkmate.html">checkmate-package</a></td>
+<td>The checkmate package</td></tr>
+</table>
+
+<h2><a name="A">-- A --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="anyMissing.html">allMissing</a></td>
+<td>Check if an object contains missing values</td></tr>
+<tr><td width="25%"><a href="anyInfinite.html">anyInfinite</a></td>
+<td>Check if an object contains infinte values</td></tr>
+<tr><td width="25%"><a href="anyMissing.html">anyMissing</a></td>
+<td>Check if an object contains missing values</td></tr>
+<tr><td width="25%"><a href="asInteger.html">asCount</a></td>
+<td>Convert an argument to an integer</td></tr>
+<tr><td width="25%"><a href="asInteger.html">asInt</a></td>
+<td>Convert an argument to an integer</td></tr>
+<tr><td width="25%"><a href="asInteger.html">asInteger</a></td>
+<td>Convert an argument to an integer</td></tr>
+<tr><td width="25%"><a href="assert.html">assert</a></td>
+<td>Combine multiple checks into one assertion</td></tr>
+<tr><td width="25%"><a href="checkAccess.html">assertAccess</a></td>
+<td>Check file system access rights</td></tr>
+<tr><td width="25%"><a href="checkArray.html">assertArray</a></td>
+<td>Check if an argument is an array</td></tr>
+<tr><td width="25%"><a href="checkAtomic.html">assertAtomic</a></td>
+<td>Check that an argument is an atomic vector</td></tr>
+<tr><td width="25%"><a href="checkAtomicVector.html">assertAtomicVector</a></td>
+<td>Check that an argument is an atomic vector</td></tr>
+<tr><td width="25%"><a href="checkCharacter.html">assertCharacter</a></td>
+<td>Check if an argument is a vector of type character</td></tr>
+<tr><td width="25%"><a href="checkChoice.html">assertChoice</a></td>
+<td>Check if an object is an element of a given set</td></tr>
+<tr><td width="25%"><a href="checkClass.html">assertClass</a></td>
+<td>Check argument inheritance</td></tr>
+<tr><td width="25%"><a href="checkComplex.html">assertComplex</a></td>
+<td>Check if an argument is a vector of type complex</td></tr>
+<tr><td width="25%"><a href="checkCount.html">assertCount</a></td>
+<td>Check if an argument is a count</td></tr>
+<tr><td width="25%"><a href="checkDataFrame.html">assertDataFrame</a></td>
+<td>Check if an argument is a data frame</td></tr>
+<tr><td width="25%"><a href="checkDirectory.html">assertDirectory</a></td>
+<td>Check for existence and access rights of directories</td></tr>
+<tr><td width="25%"><a href="checkEnvironment.html">assertEnvironment</a></td>
+<td>Check if an argument is an environment</td></tr>
+<tr><td width="25%"><a href="checkFactor.html">assertFactor</a></td>
+<td>Check if an argument is a factor</td></tr>
+<tr><td width="25%"><a href="checkFile.html">assertFile</a></td>
+<td>Check existence and access rights of files</td></tr>
+<tr><td width="25%"><a href="checkFlag.html">assertFlag</a></td>
+<td>Check if an argument is a flag</td></tr>
+<tr><td width="25%"><a href="checkFunction.html">assertFunction</a></td>
+<td>Check if an argument is a function</td></tr>
+<tr><td width="25%"><a href="checkInt.html">assertInt</a></td>
+<td>Check if an argument is a single integerish value</td></tr>
+<tr><td width="25%"><a href="checkInteger.html">assertInteger</a></td>
+<td>Check if an argument is vector of type integer</td></tr>
+<tr><td width="25%"><a href="checkIntegerish.html">assertIntegerish</a></td>
+<td>Check if an object is an integerish vector</td></tr>
+<tr><td width="25%"><a href="checkList.html">assertList</a></td>
+<td>Check if an argument is a list</td></tr>
+<tr><td width="25%"><a href="checkLogical.html">assertLogical</a></td>
+<td>Check if an argument is a vector of type logical</td></tr>
+<tr><td width="25%"><a href="checkMatrix.html">assertMatrix</a></td>
+<td>Check if an argument is a matrix</td></tr>
+<tr><td width="25%"><a href="checkNamed.html">assertNamed</a></td>
+<td>Check if an argument is named</td></tr>
+<tr><td width="25%"><a href="checkNames.html">assertNames</a></td>
+<td>Check names to comply to specific rules</td></tr>
+<tr><td width="25%"><a href="checkNull.html">assertNull</a></td>
+<td>Check if an argument is NULL</td></tr>
+<tr><td width="25%"><a href="checkNumber.html">assertNumber</a></td>
+<td>Check if an argument is a single numeric</td></tr>
+<tr><td width="25%"><a href="checkNumeric.html">assertNumeric</a></td>
+<td>Check that an argument is a vector of type numeric</td></tr>
+<tr><td width="25%"><a href="checkPathForOutput.html">assertPathForOutput</a></td>
+<td>Check file path for later output</td></tr>
+<tr><td width="25%"><a href="checkPercentage.html">assertPercentage</a></td>
+<td>Check if an argument is a percentage</td></tr>
+<tr><td width="25%"><a href="checkScalar.html">assertScalar</a></td>
+<td>Check if an argument is a single atomic value</td></tr>
+<tr><td width="25%"><a href="checkScalarNA.html">assertScalarNA</a></td>
+<td>Check if an argument is a single missing value</td></tr>
+<tr><td width="25%"><a href="checkSetEqual.html">assertSetEqual</a></td>
+<td>Check if object is a subset of a given set</td></tr>
+<tr><td width="25%"><a href="checkString.html">assertString</a></td>
+<td>Check if an argument is a string</td></tr>
+<tr><td width="25%"><a href="checkSubset.html">assertSubset</a></td>
+<td>Check if object is a subset of a given set</td></tr>
+<tr><td width="25%"><a href="checkVector.html">assertVector</a></td>
+<td>Check if an argument is a vector</td></tr>
+</table>
+
+<h2><a name="C">-- C --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="checkAccess.html">checkAccess</a></td>
+<td>Check file system access rights</td></tr>
+<tr><td width="25%"><a href="checkArray.html">checkArray</a></td>
+<td>Check if an argument is an array</td></tr>
+<tr><td width="25%"><a href="checkAtomic.html">checkAtomic</a></td>
+<td>Check that an argument is an atomic vector</td></tr>
+<tr><td width="25%"><a href="checkAtomicVector.html">checkAtomicVector</a></td>
+<td>Check that an argument is an atomic vector</td></tr>
+<tr><td width="25%"><a href="checkCharacter.html">checkCharacter</a></td>
+<td>Check if an argument is a vector of type character</td></tr>
+<tr><td width="25%"><a href="checkChoice.html">checkChoice</a></td>
+<td>Check if an object is an element of a given set</td></tr>
+<tr><td width="25%"><a href="checkClass.html">checkClass</a></td>
+<td>Check argument inheritance</td></tr>
+<tr><td width="25%"><a href="checkComplex.html">checkComplex</a></td>
+<td>Check if an argument is a vector of type complex</td></tr>
+<tr><td width="25%"><a href="checkCount.html">checkCount</a></td>
+<td>Check if an argument is a count</td></tr>
+<tr><td width="25%"><a href="checkDataFrame.html">checkDataFrame</a></td>
+<td>Check if an argument is a data frame</td></tr>
+<tr><td width="25%"><a href="checkDirectory.html">checkDirectory</a></td>
+<td>Check for existence and access rights of directories</td></tr>
+<tr><td width="25%"><a href="checkEnvironment.html">checkEnvironment</a></td>
+<td>Check if an argument is an environment</td></tr>
+<tr><td width="25%"><a href="checkFactor.html">checkFactor</a></td>
+<td>Check if an argument is a factor</td></tr>
+<tr><td width="25%"><a href="checkFile.html">checkFile</a></td>
+<td>Check existence and access rights of files</td></tr>
+<tr><td width="25%"><a href="checkFlag.html">checkFlag</a></td>
+<td>Check if an argument is a flag</td></tr>
+<tr><td width="25%"><a href="checkFunction.html">checkFunction</a></td>
+<td>Check if an argument is a function</td></tr>
+<tr><td width="25%"><a href="checkInt.html">checkInt</a></td>
+<td>Check if an argument is a single integerish value</td></tr>
+<tr><td width="25%"><a href="checkInteger.html">checkInteger</a></td>
+<td>Check if an argument is vector of type integer</td></tr>
+<tr><td width="25%"><a href="checkIntegerish.html">checkIntegerish</a></td>
+<td>Check if an object is an integerish vector</td></tr>
+<tr><td width="25%"><a href="checkList.html">checkList</a></td>
+<td>Check if an argument is a list</td></tr>
+<tr><td width="25%"><a href="checkLogical.html">checkLogical</a></td>
+<td>Check if an argument is a vector of type logical</td></tr>
+<tr><td width="25%"><a href="checkmate.html">checkmate</a></td>
+<td>The checkmate package</td></tr>
+<tr><td width="25%"><a href="checkMatrix.html">checkMatrix</a></td>
+<td>Check if an argument is a matrix</td></tr>
+<tr><td width="25%"><a href="checkNamed.html">checkNamed</a></td>
+<td>Check if an argument is named</td></tr>
+<tr><td width="25%"><a href="checkNames.html">checkNames</a></td>
+<td>Check names to comply to specific rules</td></tr>
+<tr><td width="25%"><a href="checkNull.html">checkNull</a></td>
+<td>Check if an argument is NULL</td></tr>
+<tr><td width="25%"><a href="checkNumber.html">checkNumber</a></td>
+<td>Check if an argument is a single numeric</td></tr>
+<tr><td width="25%"><a href="checkNumeric.html">checkNumeric</a></td>
+<td>Check that an argument is a vector of type numeric</td></tr>
+<tr><td width="25%"><a href="checkPathForOutput.html">checkPathForOutput</a></td>
+<td>Check file path for later output</td></tr>
+<tr><td width="25%"><a href="checkPercentage.html">checkPercentage</a></td>
+<td>Check if an argument is a percentage</td></tr>
+<tr><td width="25%"><a href="checkScalar.html">checkScalar</a></td>
+<td>Check if an argument is a single atomic value</td></tr>
+<tr><td width="25%"><a href="checkScalarNA.html">checkScalarNA</a></td>
+<td>Check if an argument is a single missing value</td></tr>
+<tr><td width="25%"><a href="checkSetEqual.html">checkSetEqual</a></td>
+<td>Check if object is a subset of a given set</td></tr>
+<tr><td width="25%"><a href="checkString.html">checkString</a></td>
+<td>Check if an argument is a string</td></tr>
+<tr><td width="25%"><a href="checkSubset.html">checkSubset</a></td>
+<td>Check if object is a subset of a given set</td></tr>
+<tr><td width="25%"><a href="checkVector.html">checkVector</a></td>
+<td>Check if an argument is a vector</td></tr>
+</table>
+
+<h2><a name="Q">-- Q --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="qassert.html">qassert</a></td>
+<td>Quick argument checks on (builtin) R types</td></tr>
+<tr><td width="25%"><a href="qassertr.html">qassertr</a></td>
+<td>Quick recursive arguments checks on lists and data frames</td></tr>
+<tr><td width="25%"><a href="qassert.html">qtest</a></td>
+<td>Quick argument checks on (builtin) R types</td></tr>
+<tr><td width="25%"><a href="qassertr.html">qtestr</a></td>
+<td>Quick recursive arguments checks on lists and data frames</td></tr>
+</table>
+
+<h2><a name="T">-- T --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="checkAccess.html">testAccess</a></td>
+<td>Check file system access rights</td></tr>
+<tr><td width="25%"><a href="checkArray.html">testArray</a></td>
+<td>Check if an argument is an array</td></tr>
+<tr><td width="25%"><a href="checkAtomic.html">testAtomic</a></td>
+<td>Check that an argument is an atomic vector</td></tr>
+<tr><td width="25%"><a href="checkAtomicVector.html">testAtomicVector</a></td>
+<td>Check that an argument is an atomic vector</td></tr>
+<tr><td width="25%"><a href="checkCharacter.html">testCharacter</a></td>
+<td>Check if an argument is a vector of type character</td></tr>
+<tr><td width="25%"><a href="checkChoice.html">testChoice</a></td>
+<td>Check if an object is an element of a given set</td></tr>
+<tr><td width="25%"><a href="checkClass.html">testClass</a></td>
+<td>Check argument inheritance</td></tr>
+<tr><td width="25%"><a href="checkComplex.html">testComplex</a></td>
+<td>Check if an argument is a vector of type complex</td></tr>
+<tr><td width="25%"><a href="checkCount.html">testCount</a></td>
+<td>Check if an argument is a count</td></tr>
+<tr><td width="25%"><a href="checkDataFrame.html">testDataFrame</a></td>
+<td>Check if an argument is a data frame</td></tr>
+<tr><td width="25%"><a href="checkDirectory.html">testDirectory</a></td>
+<td>Check for existence and access rights of directories</td></tr>
+<tr><td width="25%"><a href="checkEnvironment.html">testEnvironment</a></td>
+<td>Check if an argument is an environment</td></tr>
+<tr><td width="25%"><a href="checkFactor.html">testFactor</a></td>
+<td>Check if an argument is a factor</td></tr>
+<tr><td width="25%"><a href="checkFile.html">testFile</a></td>
+<td>Check existence and access rights of files</td></tr>
+<tr><td width="25%"><a href="checkFlag.html">testFlag</a></td>
+<td>Check if an argument is a flag</td></tr>
+<tr><td width="25%"><a href="checkFunction.html">testFunction</a></td>
+<td>Check if an argument is a function</td></tr>
+<tr><td width="25%"><a href="checkInt.html">testInt</a></td>
+<td>Check if an argument is a single integerish value</td></tr>
+<tr><td width="25%"><a href="checkInteger.html">testInteger</a></td>
+<td>Check if an argument is vector of type integer</td></tr>
+<tr><td width="25%"><a href="checkIntegerish.html">testIntegerish</a></td>
+<td>Check if an object is an integerish vector</td></tr>
+<tr><td width="25%"><a href="checkList.html">testList</a></td>
+<td>Check if an argument is a list</td></tr>
+<tr><td width="25%"><a href="checkLogical.html">testLogical</a></td>
+<td>Check if an argument is a vector of type logical</td></tr>
+<tr><td width="25%"><a href="checkMatrix.html">testMatrix</a></td>
+<td>Check if an argument is a matrix</td></tr>
+<tr><td width="25%"><a href="checkNamed.html">testNamed</a></td>
+<td>Check if an argument is named</td></tr>
+<tr><td width="25%"><a href="checkNames.html">testNames</a></td>
+<td>Check names to comply to specific rules</td></tr>
+<tr><td width="25%"><a href="checkNull.html">testNull</a></td>
+<td>Check if an argument is NULL</td></tr>
+<tr><td width="25%"><a href="checkNumber.html">testNumber</a></td>
+<td>Check if an argument is a single numeric</td></tr>
+<tr><td width="25%"><a href="checkNumeric.html">testNumeric</a></td>
+<td>Check that an argument is a vector of type numeric</td></tr>
+<tr><td width="25%"><a href="checkPathForOutput.html">testPathForOutput</a></td>
+<td>Check file path for later output</td></tr>
+<tr><td width="25%"><a href="checkPercentage.html">testPercentage</a></td>
+<td>Check if an argument is a percentage</td></tr>
+<tr><td width="25%"><a href="checkScalar.html">testScalar</a></td>
+<td>Check if an argument is a single atomic value</td></tr>
+<tr><td width="25%"><a href="checkScalarNA.html">testScalarNA</a></td>
+<td>Check if an argument is a single missing value</td></tr>
+<tr><td width="25%"><a href="checkSetEqual.html">testSetEqual</a></td>
+<td>Check if object is a subset of a given set</td></tr>
+<tr><td width="25%"><a href="checkString.html">testString</a></td>
+<td>Check if an argument is a string</td></tr>
+<tr><td width="25%"><a href="checkSubset.html">testSubset</a></td>
+<td>Check if object is a subset of a given set</td></tr>
+<tr><td width="25%"><a href="checkVector.html">testVector</a></td>
+<td>Check if an argument is a vector</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,10 @@
+mime_part	mime_part
+mime_part.character	mime_part.character
+mime_part.data.frame	mime_part.data.frame
+mime_part.default	mime_part.default
+mime_part.ggplot	mime_part.ggplot
+mime_part.matrix	mime_part.matrix
+mime_part.trellis	mime_part.trellis
+sendmail	sendmail
+sendmailOptions	sendmail_options
+sendmail_options	sendmail_options

@@ -1,0 +1,31 @@
+Package: BBmisc
+Title: Miscellaneous Helper Functions for B. Bischl
+Description: Miscellaneous helper functions for and from B. Bischl and
+    some other guys at TU Dortmund, mainly for package development.
+Authors@R: c(person("Bernd", "Bischl", email = "bernd_bischl@gmx.net",
+    role = c("aut", "cre")), person("Michel", "Lang", email =
+    "michellang@gmail.com", role = "aut"), person("Jakob", "Bossek",
+    email = "jakob.bossek@tu-dortmund.de", role = "aut"),
+    person("Daniel", "Horn", email = "daniel.horn@tu-dortmund.de", role
+    = "aut"), person("Jakob", "Richter", email = "code@jakob-r.de",
+    role = "aut"))
+URL: https://github.com/berndbischl/BBmisc
+BugReports: https://github.com/berndbischl/BBmisc/issues
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+Imports: stats, checkmate
+Suggests: testthat, microbenchmark, codetools
+LazyData: yes
+ByteCompile: yes
+Version: 1.9
+Packaged: 2015-02-03 12:39:37 UTC; bischl
+Author: Bernd Bischl [aut, cre], Michel Lang [aut], Jakob Bossek [aut],
+    Daniel Horn [aut], Jakob Richter [aut]
+Maintainer: Bernd Bischl <bernd_bischl@gmx.net>
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-02-03 14:03:05
+Built: R 3.1.2; x86_64-unknown-linux-gnu; 2017-07-28 14:23:39 UTC; unix
+InstallAgent: packrat 0.4.8.1
+InstallSource: CRAN
+Hash: 0f4232b1208da9b625c1412c6ff328e6

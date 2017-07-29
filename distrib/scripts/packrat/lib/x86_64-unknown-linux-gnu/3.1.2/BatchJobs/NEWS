@@ -1,0 +1,120 @@
+BatchJobs_1.6:
+- Added functions: getStatus, removeRegistry, findDisappeared
+- All find* function now support a 'limit' argument (default unlimited)
+- We are less strict in arg checks of makeSSHWorker, so you can set a load higher than ncpus
+- loadExports: added argument "what"
+- batchApply now works with arrays
+- filehandling for the registry, especially on Windows, was improved (Thx Henrik Bengtsson) 
+- You can set pragmas via db.options in your config file.
+- The SQLite pragma "busy_timeout" is now set per default with a value of
+  5000ms.
+- The default number of cores is now retrieved from the option "mc.cores" rather
+- New configuration option BatchJobs.load.config
+- Fixed some minor things.
+
+BatchJobs_1.5:
+- Updated to use RSQLite >=1.0.0
+- Fixed a bug in waitForJobs().
+- Fixed a regression parsing array job ids.
+- Argument 'progressbar' added to multiple functions to suppress displaying the
+  progress bars.
+- Configuration option 'staged.queries' is now enabled per default.
+
+BatchJobs_1.4:
+- Added functions: batchExport, batchUnexport, loadExports
+- Added functions: addRegistryPackages, removeRegistryPackages
+- Added functions: addRegistrySourceFiles, addRegistrySourceDirs,
+  removeRegistrySourceFiles, removeRegistrySourceDirs
+- Added functions: getJobParamDf
+- New option: "BatchJobs.clear.function.env". If TRUE the function environment
+  will be erased prior to writing it to the file system. Otherwise a warning is
+  issued if the environment exceeds 10Mb in size.
+- version 1.3 introduced a mini bug in the SGE interface
+  (via new list.jobs.cmd option). Fixed.
+- Memory usage is now stored in the database and can be queried using
+  getJobInfo().
+
+BatchJobs_1.3:
+- Reduced memory consumption and disk i/o if 'more.args' is used.
+- added option in Registry for absolute paths src.files and src.dirs
+- Added option "BatchJobs.verbose" for report generators like knitr
+- added "file.dir" option to batchMapQuick, removed option 'temporary' as this is now more flexible.
+- package 'methods' is always loaded on slaved to avoid problems with S4 code
+- some smaller fixes
+- in makeClusterFunctions* it is now to configurable via what command jobs are listed on the system
+- default for BatchJobs.check.posix is now: OS != Windows
+
+BatchJobs_1.2:
+- Fixed a bug where too many running jobs were queried on some Torque systems
+- Fixed a bug where chunking did not work with batchMapQuick
+- Fixed mail subjects to be more precise on job IDs
+- Fixed output of running time in testJob()
+- More robust error handling in syncRegistry
+- waitForJobs is now more conservative in waiting for termination of jobs.
+- New argument "impute.val" for reduceResults-family of functions:
+  This allows to conveniently reduce results while some are missing
+- Experimental framework to support sourcing of multiple files and directories
+- testJob can now run jobs interactively in the current R session if argument
+  "external" is set to TRUE.
+
+BatchJobs_1.1-1135:
+- Increased minor version number
+- Added support for SLURM schedulers
+- Function getErrors renamed to getErrorMessages due to conflicts with RUnit.
+  Interface change: argument "print" dropped
+- Redefined return value of function "waitForJobs" which should now be much easier to understand.
+- New option "BatchJobs.check.posix" to enable more relaxed checks on file and directory names
+- Helper functions to simplify integration into other packages: getConfig, loadConfig and setConfig.
+  showConf was replaced with a print generic.
+- Improved stability and speed of killJobs
+- Added a workaround to fix file URI handling on windows
+- Many minor bug and documentation fixes
+- The registry now supports an "exports" directory of exported objects,
+  which are always loaded on the slaves, e.g. data objects which are needed in every job
+  This directory can be either managed manually or - more  conveniently - via the "fail" package on CRAN.
+- The registry now supports a list of source directories.
+  All R files in these subdirectories are sourced on the slaves (and also on the master)
+  Nice if you have a lot of helper code in seperate R files which is needed in your jobs.
+- batchMap and all result functions where this is reasonable support naming results with the names
+  of the elements that were mapped over (see use.names argument)
+- batchMap now supports mapping over any kind of object (not only lists and vectors) that supports the
+  "length" and "[" / "[["- index method.
+
+BatchJobs_1.0-966:
+- Dropped support for R < 2.13.0 (.find.packages deprecated)
+- speedups in reduceResults[ReturnValue]
+- Output of showStatus now contains a time information
+- fixed a bug in findErrors (argument 'ids' was ignored)
+- New function sweepRegistry: Remove intermediate/temporary/obsolete files
+- Better error handling in case of I/O errors
+- New functions: findStarted() and findNotStarted()
+
+BatchJobs_1.0-915:
+- new option to raise warnings to errors on the slaves
+- option to set process priority via nice in clusterFunctionsMulticore and
+  clusterFunctionsSSH
+- new helper functions: getErrors, getJobInfo, loadConfig, callFunctionOnSSHWorkers, getSSHWorkersInfo,
+  installPackagesOnSSHWorkers, waitForJobs, several more find* functions
+- removed helper getJobTimes -> this is included in getJobInfo
+- experimental file-based caching mechanism to speed up the processing of queries generated on computational nodes
+- various smaller fixes
+- documentation fixes
+
+BatchJobs_1.0-606:
+- many dependencies are now imports
+- many fixes and improvements for stability in cluster functions
+- helper functions for your own cluster functions are exported and documented, they all start with cf*
+- interactive mode now has dummy functions for listing and killing jobs
+- interactive mode now generates log files
+- job resources (from submits) are stored and can be queried on the master and the slaves
+  (see getResources and getJobResources)
+- defaults for job resources can be specified in config file, see config part on web page
+- multicore and SSH mode now supports r.options, i.e. options to start Rscript and R CMD BATCH with
+- function grepLogs to search log files for a pattern
+
+BatchJobs_1.0-527:
+- very minor bug fixes: for argument conversion and checks
+
+BatchJobs_1.0-485:
+- First submit to CRAN.
+

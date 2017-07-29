@@ -1,0 +1,208 @@
+useDynLib(GenomicAlignments)
+
+import(methods)
+importFrom(stats, setNames)
+import(BiocGenerics)
+import(S4Vectors)
+import(IRanges)
+import(GenomeInfoDb)
+import(GenomicRanges)
+import(Biostrings)
+import(Rsamtools)
+importFrom(BiocParallel, bplapply)
+
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Export S4 classes
+###
+
+exportClasses(
+    GAlignments,
+    GAlignmentPairs,
+    GAlignmentsList,
+    GappedReads,
+    OverlapEncodings
+)
+
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Export S3 methods
+###
+
+S3method(as.data.frame, OverlapEncodings)
+
+S3method(levels, OverlapEncodings)
+
+### We also export them thru the export() directive so that (a) they can be
+### called directly, (b) tab-completion on the name of the generic shows them,
+### and (c) methods() doesn't asterisk them.
+export(
+    as.data.frame.OverlapEncodings,
+
+    levels.OverlapEncodings
+)
+
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Export S4 methods for generics not defined in GenomicAlignments
+###
+
+exportMethods(
+    c,
+
+    ## Generics defined in BiocGenerics:
+    start, end, width,
+ 
+    ## Generics defined in IRanges:
+    relistToClass,
+    ngap,
+    narrow,
+    coverage,
+    pintersect,
+    findOverlaps, countOverlaps, overlapsAny, subsetByOverlaps,
+    map, mapCoords,
+
+    ## Generics defined in GenomicRanges:
+    seqinfo, "seqinfo<-",
+    seqnames, "seqnames<-",
+    seqlevelsInUse,
+    granges, grglist, rglist,
+
+    ## Generics defined in Biostrings:
+    encoding
+)
+
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Export non-generic functions
+###
+
+export(
+    validCigar,
+    CIGAR_OPS,
+    explodeCigarOps, explodeCigarOpLengths,
+    cigarToRleList,
+    cigarRangesAlongReferenceSpace,
+    cigarRangesAlongQuerySpace,
+    cigarRangesAlongPairwiseSpace,
+    extractAlignmentRangesOnReference,
+    cigarWidthAlongReferenceSpace,
+    cigarWidthAlongQuerySpace,
+    cigarWidthAlongPairwiseSpace,
+    cigarNarrow, cigarQNarrow,
+    cigarOpTable,
+    queryLoc2refLoc, queryLocs2refLocs,
+
+    GAlignments,
+    GAlignmentPairs,
+    GAlignmentsList,
+    makeGAlignmentsListFromFeatureFragments,
+    GappedReads,
+
+    findMateAlignment, findMateAlignment2,
+    makeGAlignmentPairs,
+    getDumpedAlignments, countDumpedAlignments, flushDumpedAlignments,
+
+    readGAlignments,
+    readGAlignmentPairs,
+    readGAlignmentsList,
+    readGappedReads,
+
+    NATURAL_INTRON_MOTIFS,
+    summarizeJunctions,
+    readTopHatJunctions,
+    readSTARJunctions,
+
+    sequenceLayer,
+    pileLettersAt,
+    stackStringsFromBam,
+    alphabetFrequencyFromBam,
+
+    encodeOverlaps1,
+    flipQuery,
+    selectEncodingWithCompatibleStrand,
+    extractQueryStartInTranscript,
+
+    countCompatibleOverlaps,
+
+    Union, IntersectionNotEmpty, IntersectionStrict,
+
+    ## old stuff (deprecated or defunct):
+    Lngap, Rngap,
+    introns
+)
+
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Export S4 generics defined in GenomicAlignments + export corresponding
+### methods
+###
+
+export(
+    ## GAlignments-class.R:
+    rname, "rname<-", cigar, qwidth, njunc,
+
+    ## GAlignmentPairs-class.R:
+    first, last, left, right, isProperPair,
+
+    ## GappedReads-class.R:
+    qseq,
+
+    ## OverlapEncodings-class.R:
+    Loffset, Roffset, flippedQuery,
+    Lencoding, Rencoding, Lnjunc, Rnjunc,
+
+    ## readGAlignments.R:
+    readGAlignmentsFromBam,
+    readGAlignmentPairsFromBam,
+    readGAlignmentsListFromBam,
+    readGappedReadsFromBam,
+
+    ## junctions-methods.R:
+    junctions,
+
+    ## intra-range-methods.R:
+    qnarrow,
+
+    ## encodeOverlaps-methods.R:
+    encodeOverlaps,
+    isCompatibleWithSplicing,
+    isCompatibleWithSkippedExons,
+    extractSteppedExonRanks,
+    extractSpannedExonRanks,
+    extractSkippedExonRanks,
+
+    ## findCompatibleOverlaps-methods.R:
+    findCompatibleOverlaps,
+
+    ## summarizeOverlaps-methods.R:
+    summarizeOverlaps,
+
+    ## findSpliceOverlaps-methods.R:
+    findSpliceOverlaps
+)
+
+### Exactly the same list as above.
+exportMethods(
+    rname, "rname<-", cigar, qwidth, njunc,
+    first, last, left, right, isProperPair,
+    qseq,
+    Loffset, Roffset, flippedQuery,
+    Lencoding, Rencoding, Lnjunc, Rnjunc,
+    readGAlignmentsFromBam,
+    readGAlignmentPairsFromBam,
+    readGAlignmentsListFromBam,
+    readGappedReadsFromBam,
+    junctions,
+    qnarrow,
+    encodeOverlaps,
+    isCompatibleWithSplicing,
+    isCompatibleWithSkippedExons,
+    extractSteppedExonRanks,
+    extractSpannedExonRanks,
+    extractSkippedExonRanks,
+    findCompatibleOverlaps,
+    summarizeOverlaps,
+    findSpliceOverlaps
+)
+
