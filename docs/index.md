@@ -1,19 +1,22 @@
 # Transposable Element Next Generation Sequencing
 
 ## About
-genomics tools for TE-enriched next generation sequencing and detection of active transposable elements  
+Genomics tools for TE-enriched next generation sequencing and detection of active transposable elements  
 
-1. molecular genomics protocol for generating TE-enriched NGS libraries 
-2. computational pipeline for detecting TE insertions 
+1. molecular genomics protocol for generating TE-enriched NGS libraries   
+- detailed procedures [protocol](#)  
+2. computational pipeline for detecting TE insertions   
+- get the source [code](https://github.com/ekviky/TE-NGS)  
 
 TE calling algorithm consists of two principle steps:  
-(i) clustering on genomic coordinates  
-(ii) annotation via comparison to public and local TE databases  
+ (i) clustering on genomic coordinates  
+ (ii) annotation via comparison to public and local TE databases  
+
 
 ## Implementation  
 TE-NGS is implemented in R and distributed using [packrat](https://github.com/rstudio/packrat) for management of packages, dependencies, etc. The snapshot is built on R version 3.1.2.  
 
-Tool employing the following packages:  
+R tool employs the following packages:  
 - Rsamtools for bam manipulation  
 - GenomicRanges for manipulation of genomic coordinates  
 - Biostrings for fast implementation of regular expression pattern matching  
@@ -27,11 +30,11 @@ The R script requires the following inputs:
 
 ## Getting started  
 
-Navigate to /scripts where packrat snapshot is built  
+Navigate to /scripts where packrat snapshot is built 
+ 
     $ cd scripts
 
-First time running R, packrat will build the local library of required packages and dependencies bundled in /packrat/src  
-launch R
+First time launching R, packrat will build the local library of required packages and dependencies bundled in /packrat/src  
 
 ensure packrat is on  
 
@@ -57,11 +60,5 @@ all TE calls made for NA12878 and results described in manuscript
 
 ## Read more
 - paper describing method [pdf](#)
-
-- detailed procedures [protocol](#)
-
-- get the source [code](https://github.com/ekviky/TE-NGS)
-
 - email
-
 - other [projects](https://ekviky.github.io/about/)
