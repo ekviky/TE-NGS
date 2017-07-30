@@ -47,13 +47,13 @@ Run the script to generate TE calls
 
 
 ## Distribution
-Along with the source code are additional files
-/annotations
-	polyTEdb - an extensive local database of polymorhic TE compiled from public databases and TE protocols (list references)
+Along with the source code several additional files are provided:   
 
-/examples
-Contains example output files
-        NA12878_TE-NGS_calls_annotated_v0.1.bed # all TE calls made for NA12878 and results described in manuscript
+/annotations  
+	polyTEdb - an extensive local database of polymorhic TE compiled from public databases and TE protocols (list references)  
+/examples  
+Contains example output files  
+        NA12878_TE-NGS_calls_annotated_v0.1.bed # all TE calls made for NA12878 and results described in manuscript  
 
 
 ## Read more
