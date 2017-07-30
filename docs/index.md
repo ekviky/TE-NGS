@@ -1,17 +1,19 @@
-# Transposable Element Next Generation Sequencing
+# Transposable Element Next Generation Sequencing  
 
-## About
-Genomics tools for TE-enriched next generation sequencing and detection of active transposable elements  
+Transposable elements (TEs) are sequences that can transpose or "jump" from position to position within genomes. In humans, this jumping mechanism has resulted in sequence diversity among individuals, including phenotypes such as genetic disease. With Gerton Lunter, we have developed genomics tools for TE-enriched next generation sequencing and detection of polymorphic TEs in human genomes.   
 
-1. molecular genomics protocol for generating TE-enriched NGS libraries   
-- detailed procedures [protocol](#)  
-2. computational pipeline for detecting TE insertions   
+## About  
+The method - described here [pdf](#) consists of  
+  
+1. Molecular genomics protocol for generating TE-enriched NGS libraries  
+- detailed procedures [protocol](#)   
+ 
+2. Computational pipeline for detecting TE insertions   
 - get the source [code](https://github.com/ekviky/TE-NGS)  
 
 TE calling algorithm consists of two principle steps:  
  (i) clustering on genomic coordinates  
  (ii) annotation via comparison to public and local TE databases  
-
 
 ## Implementation  
 TE-NGS is implemented in R and distributed using [packrat](https://github.com/rstudio/packrat) for management of packages, dependencies, etc. The snapshot is built on R version 3.1.2.  
@@ -66,6 +68,5 @@ all TE calls made for NA12878 and results described in manuscript
 
 
 ## Read more
-- paper describing method [pdf](#)
 - email
 - other [projects](https://ekviky.github.io/about/)
