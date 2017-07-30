@@ -27,19 +27,22 @@ The R script requires the following inputs:
 
 ## Getting started  
 
-Navigate to /scripts where packrat snapshot is built
+Navigate to /scripts where packrat snapshot is built  
     $ cd scripts
 
-First time running R, packrat will build the local library of required packages and dependencies bundled in /packrat/src
+First time running R, packrat will build the local library of required packages and dependencies bundled in /packrat/src  
 launch R
 
-ensure packrat is on 
+ensure packrat is on  
+
     > packrat::on()
 
-Check that packrat is up to date
+Check that packrat is up to date 
+ 
     > packrat::status()
 
-Run the script to generate TE calls
+Run the script to generate TE calls  
+    
     $ R --no-restore --no-save --no-readline --quiet < R_get_TE_calls_v0.1.r --args ../test/ ../test/seq_opt_table.txt 201 test
 
 

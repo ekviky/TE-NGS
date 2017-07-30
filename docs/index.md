@@ -34,12 +34,15 @@ First time running R, packrat will build the local library of required packages 
 launch R
 
 ensure packrat is on  
+
     > packrat::on()
 
-Check that packrat is up to date  
+Check that packrat is up to date 
+ 
     > packrat::status()
 
 Run the script to generate TE calls  
+    
     $ R --no-restore --no-save --no-readline --quiet < R_get_TE_calls_v0.1.r --args ../test/ ../test/seq_opt_table.txt 201 test
 
 
