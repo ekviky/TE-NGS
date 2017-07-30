@@ -2,6 +2,7 @@
 This distribution contains the following subdirectories:
 
 /scripts 
+
 TE calling implemented in R 
 	R_get_TE_calls_v0.1.r 
 
@@ -19,11 +20,11 @@ Contains local copies all input TE annotations, reference annotations, primer se
 
 /test 
 Contains files necessary for implementation and unit testing
-	seq_opt_table.txt # input file describing experimental design 
-	input bams NA12878 # chr1 only
-	cluster output files for NA12878 to compare output
-	annotated cluster files for NA12878 for comparison/unit testing
+seq_opt_table.txt # input file describing experimental design 
+input bams NA12878 # chr1 only
+cluster output files for NA12878 to compare output
+annotated cluster files for NA12878 for comparison/unit testing
 
 /examples
 Contains example output files
-	NA12878_TE-NGS_calls_annotated_v0.1.bed # all TE calls made for NA12878 and results described in manuscript
+NA12878_TE-NGS_calls_annotated_v0.1.bed # all TE calls made for NA12878 and results described in manuscript
