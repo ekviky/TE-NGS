@@ -26,6 +26,6 @@ Run on your sample of choice:
 
     $ R --no-restore --no-save --no-readline --quiet < R_get_TE_calls_v0.1.r --args ../foo/ ../foo/seq_opt_table.txt 201 sample  
 
-where /foo points to your own bams generated from the TE-enriched [protocol](#)  
+where /foo points to your own bams generated from the TE-enriched [procotol](#)  
 
 See the [project page](https://ekviky.github.io/TE-NGS/) for more information 
