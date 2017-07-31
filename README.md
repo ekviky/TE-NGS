@@ -16,7 +16,10 @@ Ensure packrat is on
 
 Check that packrat is up to date 
  
-    > packrat::status()
+    > packrat::status()  
+
+Make sure /annotations files are uncompressed!  
+TO DO: update R function to handle gzip input files  
 
 Run the script in test mode: compare output provided as expected in /test, eg. 
     
