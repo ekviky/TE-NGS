@@ -1,4 +1,0 @@
-# Export all names
-useDynLib(seqinr, .registration = TRUE)
-exportPattern(".")
-importFrom(ade4,dudi.coa)
