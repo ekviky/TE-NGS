@@ -54,6 +54,8 @@ Navigate to /scripts where packrat snapshot is built
 
 First time launching R, packrat will check the build of the local library of required packages and dependencies. Should see message, eg.  
 
+    $ R
+    ...
     Packrat mode on. Using library in directory:  
     - "/foo/TE-NGS/distrib/scripts/packrat/lib"  
 
@@ -73,13 +75,12 @@ Along with the source code several additional files are provided:
 
 The directory /annotations contains genomic interval flat files in build GRhs37 (hg19) for annotation of TE calls with known insertions.   
 
-- polyTEdb - we compiled an extensive local database of known polymorhic TE insertions obtained from public databases and TE protocols (list references). Each TE is cross-referenced giving the number of sources, subfamily annotation in each source (for disambiguation), and primary source reference.   
-  
+- polyTEdb - we compiled an extensive local database of known polymorhic TE insertions obtained from public databases and TE protocols (list references). Each TE is cross-referenced giving the number of sources, subfamily annotation in each source (for disambiguation), and primary source reference.  
+
     $ gunzip -c ../distrib/annotations/polyTEdb_window3flank600bp.interval.gz | more
     chr1    645109  645710  1       ALU,    AluYa4_5,       phase3,
     chr1    697981  698582  1       NA,     NA,     Witherspoon,
     chr1    812282  812883  1       LINE1,  LINE1,  phase3,
-
 
 
 The directory /examples 
