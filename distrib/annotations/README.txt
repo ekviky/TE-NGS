@@ -1,6 +1,5 @@
 This directory contains flat files used by the TE detection script.
 
-
 The following are interval/bed format files of TE insertions annotated in the reference genome (build GRCh37/hg19). Stard/end coordinate positions are extended by a 600bp flanking window downstream of the 3 prime TE insertion site wrt reference strand (ie., end+600 if inserted on forward strand; start-600 if inserted on reverse strand).
 
 1. polyTEdb_window3flank600bp.interval.gz
@@ -27,5 +26,5 @@ The following are hg19 coordinates used to define regions accessible by short-re
  - hg19_centroTelo_sorted.txt.gz, centromeres and telomeres obtained from UCSC Table Browser
  - hg19_NA12878_access_custom2.bed.gz, regions excluding centromeres/telomeres, reference gaps, low complexity regions obtained from UCSC Table Browser annotations and NA12878-specific CNV obtained from DGV. NB, only used in test mode when run on NA12878 files provided in /test.
 
-Fasta file containing nested primer sequences used to generate TE-NGS libraries (Table S2 in manuscript) 
+A fasta file containing nested primer sequences used to generate TE-NGS libraries (Table S2 in manuscript) is also required as input.
  - primers.fa.gz
