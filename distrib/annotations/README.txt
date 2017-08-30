@@ -27,4 +27,4 @@ The following are hg19 coordinates used to define regions accessible by short-re
  - hg19_NA12878_access_custom2.bed.gz, regions excluding centromeres/telomeres, reference gaps, low complexity regions obtained from UCSC Table Browser annotations and NA12878-specific CNV obtained from DGV. NB, only used in test mode when run on NA12878 files provided in /test.
 
 Fasta file containing nested primer sequences used to generate TE-NGS libraries (Table S2 in manuscript) 
- - P3_primers.txt.gz
+ - primers.fa.gz
