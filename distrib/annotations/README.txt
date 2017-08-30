@@ -19,7 +19,7 @@ TE annotations were obtained from the following sources:
 3. hg19_RM_allLINESINE_window3flank600bp.interval.gz
 RepeatMasker SINE/LINE annotations for hg19
 
-4. gw_TE_targets_window3flank600bp.interval.gz
+4. hg19_TE_targets_window3flank600bp.interval.gz
 Targetable loci present in hg19 defined as loci with matches to both TE-target and TE-nested primers, allowing at most 1 mismatch excluding the ultimate 3 prime primer nucleotide, positioned a maximum distance of 200bp apart, and in proper order and orientation. 
 
 The following are hg19 coordinates used to define regions accessible by short-read alignment
