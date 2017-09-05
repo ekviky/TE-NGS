@@ -79,6 +79,15 @@ Run the script to generate TE calls
     
     $ R --no-restore --no-save --no-readline --quiet < R_get_TE_calls_v0.1.r --args /bamdir/ /bamdir/seq_opt_table.txt 201 sample  
 
+## Troubleshooting
+
+Ensure packrat is on  
+
+    > packrat::on()
+
+Check that packrat is up to date
+
+    > packrat::status()
 
 ## Distribution
 Along with the source code several additional files are provided:   
