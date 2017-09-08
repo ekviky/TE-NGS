@@ -3,32 +3,32 @@
 Transposable elements (TEs) are sequences that can transpose or "jump" from position to position within genomes. In humans, this jumping mechanism has resulted in sequence diversity among individuals, including phenotypes such as genetic disease. With Gerton Lunter, we have developed genomics tools for TE-enriched next generation sequencing and detection of polymorphic TEs in human genomes.   
 
 ## About  
-Why sequence TEs directly?  
+Why target TEs?  
 
-1. **TEs are ubiquitous**: ~1/2 human genome is annotated as TE derived, and up to ~2/3 can be identified as originating from ancient relics of TEs[1]
+1. **TEs are ubiquitous**: ~1/2 human genome is annotated as TE derived, and up to ~2/3 can be identified as originating from ancient relics of TEs
 2. **TEs are rare, but active**: 3 subfamilies account for vast majority (>95%) of polymorphic TEs in humans, but combined account for <0.2% of the genome
-3. **TEs are tricky to sequence**: an estimated minimum of 140x coverage is necessary to identify TEs reliably (>90% sensitivity) from whole genome sequencing[2]
+3. **TEs are tricky to sequence**: an estimated minimum of 140x coverage is needed to identify TEs reliably (>90% sensitivity) from whole genome sequencing 
 
 We developed TE-NGS to overcome these challenges. TE-NGS is
 
-- **High-throughput** NGS sequencing-based
-- **Comprehensive** targets the 3 (L1HS, AluYa5/8, and AluYb8/9) most active TE subfamilies simultaneously
-- **Affordable** both high sensitivity and specificity can achieve deep multiplexing of many individuals for a fraction of the cost of whole exome sequencing
+- **High-throughput**: NGS sequencing-based
+- **Comprehensive**: targets the 3 (L1HS, AluYa5/8, and AluYb8/9) most active TE subfamilies simultaneously
 - **Practical**: assembles routine molecular genomics techniques 
 
-The method - described here [pdf](#) consists of  
+The method - described here [pdf](#) consists of two parts
   
-1. Molecular genomics protocol for generating TE-enriched NGS libraries  
+1. a molecular genomics protocol for generating TE-enriched NGS libraries  
 - detailed procedures [protocol](#)   
  
-2. Computational pipeline for detecting TE insertions   
+2. a computational pipeline for detecting TE insertions   
 - get the source [code](https://github.com/ekviky/TE-NGS)  
+
+## Implementation  
 
 TE calling algorithm consists of two principle steps:  
  (i) clustering on genomic coordinates  
  (ii) annotation via comparison to public and local TE databases  
 
-## Implementation  
 TE-NGS is implemented in R and distributed using [packrat](https://github.com/rstudio/packrat) for management of packages, dependencies, etc. The snapshot is built on R version 3.1.2.  
 
 The R tool employs the following packages:  
