@@ -3,6 +3,19 @@
 Transposable elements (TEs) are sequences that can transpose or "jump" from position to position within genomes. In humans, this jumping mechanism has resulted in sequence diversity among individuals, including phenotypes such as genetic disease. With Gerton Lunter, we have developed genomics tools for TE-enriched next generation sequencing and detection of polymorphic TEs in human genomes.   
 
 ## About  
+Why sequence TEs directly?  
+
+1. **TEs are ubiquitous**: ~1/2 human genome is annotated as TE derived, and up to ~2/3 can be identified as originating from ancient relics of TEs[1]
+2. **TEs are rare, but active**: 3 subfamilies account for vast majority (>95%) of polymorphic TEs in humans, but combined account for <0.2% of the genome
+3. **TEs are tricky to sequence**: an estimated minimum of 140x coverage is necessary to identify TEs reliably (>90% sensitivity) from whole genome sequencing[2]
+
+We developed TE-NGS to overcome these challenges. TE-NGS is
+
+- **High-throughput** NGS sequencing-based
+- **Comprehensive** targets the 3 (L1HS, AluYa5/8, and AluYb8/9) most active TE subfamilies simultaneously
+- **Affordable** both high sensitivity and specificity can achieve deep multiplexing of many individuals for a fraction of the cost of whole exome sequencing
+- **Practical**: assembles routine molecular genomics techniques 
+
 The method - described here [pdf](#) consists of  
   
 1. Molecular genomics protocol for generating TE-enriched NGS libraries  
