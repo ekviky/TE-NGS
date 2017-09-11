@@ -129,10 +129,10 @@ The directory /examples
 
 ---
 ## Read more
-Lander ES et al: Initial sequencing and analysis of the human genome. Nature 2001, 409(6822):860-921.
+1. Lander ES et al: Initial sequencing and analysis of the human genome. Nature 2001, 409(6822):860-921.
 
-de Koning AP et al: Repetitive elements may comprise over two-thirds of the human genome. PLoS Genet 2011, 7(12):e1002384.
+2. de Koning AP et al: Repetitive elements may comprise over two-thirds of the human genome. PLoS Genet 2011, 7(12):e1002384.
 
-Sudmant PH et al: An integrated map of structural variation in 2,504 human genomes. Nature 2015, 526(7571):75-81.
+3. Sudmant PH et al: An integrated map of structural variation in 2,504 human genomes. Nature 2015, 526(7571):75-81.
 
 - other [projects](https://ekviky.github.io/about/)
