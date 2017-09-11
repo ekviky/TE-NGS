@@ -25,7 +25,8 @@ The method - described here [pdf](#) consists of two parts
 
 ## Implementation  
 
-The TE-NGS algorithm consists of two principle steps to identify TE calls:  
+The TE-NGS algorithm consists of two principle steps to identify TE calls: 
+ 
   (i) clustering of reads based on genomic coordinates  
   (ii) annotation of clusters via comparison to public and local TE databases  
 
