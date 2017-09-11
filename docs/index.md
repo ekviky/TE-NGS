@@ -25,10 +25,10 @@ The method - described here [pdf](#) consists of two parts
 
 ## Implementation  
 
-The TE-NGS algorithm consists of two principle steps to identify TE calls: 
+The TE-NGS algorithm consists of two principle steps to identify TE calls:  
  
-  (i) clustering of reads based on genomic coordinates  
-  (ii) annotation of clusters via comparison to public and local TE databases  
+  (i) clustering of reads based on genomic coordinates   
+  (ii) annotation of clusters via comparison to public and local TE databases   
 
 TE-NGS is implemented in R and distributed using [packrat](https://github.com/rstudio/packrat) for management of packages, dependencies, etc. The snapshot is built on R version 3.1.2.  
 
