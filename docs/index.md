@@ -115,7 +115,7 @@ Along with the source code several additional files are provided:
 
 The directory /annotations contains genomic interval flat files in build GRhs37 (hg19) for annotation of TE calls with known insertions.   
 
-- polyTEdb - we compiled an extensive local database of known polymorhic TE insertions obtained from public databases and TE protocols (list references). Each TE is cross-referenced giving the number of sources, subfamily annotation in each source (for disambiguation), and primary source reference. 
+- polyTEdb - we compiled an extensive local database of known polymorhic TE insertions obtained from public databases and published TE-targeting protocols. Each TE is cross-referenced giving the number of sources, subfamily annotation in each source (for disambiguation), and primary source reference. 
 ```
     $ gunzip -c polyTEdb_window3flank600bp.interval.gz | more  
     chr1    645109  645710  1       ALU,    AluYa4_5,       phase3, 
@@ -125,9 +125,14 @@ The directory /annotations contains genomic interval flat files in build GRhs37 
 
 The directory /examples 
 
-- NA12878_TE-NGS_calls_annotated_v0.1.bed - a flat file containing all TE-NGS calls made for NA12878 as described in manuscript.  
+- NA12878_TE-NGS_calls_annotated_v0.1.bed - a flat file containing all TE-NGS calls made for NA12878 as described in [manuscript](#) .  
 
 ---
 ## Read more
-- email
+Lander ES et al: Initial sequencing and analysis of the human genome. Nature 2001, 409(6822):860-921.
+
+de Koning AP et al: Repetitive elements may comprise over two-thirds of the human genome. PLoS Genet 2011, 7(12):e1002384.
+
+Sudmant PH et al: An integrated map of structural variation in 2,504 human genomes. Nature 2015, 526(7571):75-81.
+
 - other [projects](https://ekviky.github.io/about/)
