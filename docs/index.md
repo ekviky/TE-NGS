@@ -16,7 +16,7 @@ We developed TE-NGS to overcome these challenges. TE-NGS is
 - **Comprehensive**: targets the 3 (L1HS, AluYa5/8, and AluYb8/9) most active TE subfamilies simultaneously
 - **Practical**: assembles routine molecular genomics techniques 
 
-The method - described here [pdf](#) consists of two parts
+The method - described here [pdf](https://www.biorxiv.org/content/early/2017/09/22/192708) consists of two parts
   
 1. a molecular genomics protocol for generating TE-enriched NGS libraries  
 - detailed procedures [protocol](#)   
