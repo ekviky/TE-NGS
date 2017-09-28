@@ -42,7 +42,7 @@ The R tool employs the following packages:
 - data.table for binary search   
 
 The R script requires the following arguments:
-- seq_opt_table.txt # a file describing the experimental conditions per sample, eg sample ID, index, primer  
+- seq_opt_table.txt # a file describing the experimental conditions per sample, eg sample ID, TE, primers used, sequencing index ID 
 ```
 $ cat seq_opt_table.txt
 experiment	category	TE_target_primers	TE_nested	index
