@@ -45,7 +45,7 @@ The R script requires the following arguments:
 - seq_opt_table.txt # a file describing the experimental conditions per sample, eg sample ID, index, primer  
 ```
 $ cat seq_opt_table.txt
-experiment	category	P1	P3	index
+experiment	category	TE_target_primers	TE_nested	index
 NA12878_A	element_A	"Alu_target","L1HS_target"	L1HS_nested	237
 NA12878_C	element_C	"Alu_target","L1HS_target"	AluYb89_nested	277
 ```
