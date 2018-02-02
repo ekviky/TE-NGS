@@ -70,6 +70,7 @@ First time launching R, packrat will check the build of the local library of req
     ...
     Packrat mode on. Using library in directory:  
     - "/foo/TE-NGS/distrib/scripts/packrat/lib"  
+
 ---
 ## Requirements
 
