@@ -40,7 +40,7 @@ Run the script in sample mode: on your sample of choice
 
 where /bar points to your own directory of bams generated from the TE-enriched [protocol](http://rdcu.be/F6w6)  
 
-## Troubleshooting  
+## Documentation  
 
 See the [project page](https://ekviky.github.io/TE-NGS/) for more information 
 
